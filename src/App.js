@@ -8,7 +8,6 @@ import Footer from "./components/footer";
 import Landing from "./components/landing";
 import Navbar from "./components/navbar";
 import RoadMapCarosual from "./components/roadmap";
-import RoadMap from "./components/roadmap/RoadMap";
 import Team from "./components/team/Team";
 import Utility from "./components/utility/Utility";
 
@@ -24,7 +23,6 @@ function App() {
         <About />
         <RoadMapCarosual />
         <Utility />
-        <RoadMap />
         <Team />
         <Footer />
       </div>

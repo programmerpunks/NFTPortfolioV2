@@ -8,7 +8,7 @@ const Utility = () => {
       <h1 className="text-white text-center font-bold text-3xl py-10">
         Holder Utility
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 gap-5">
         {utility.map((item) => {
           return <Card heading={item.heading} about={item.about} />;
         })}
