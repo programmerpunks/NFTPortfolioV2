@@ -1,9 +1,10 @@
 import React from "react";
+
 import About from "./components/about";
 import Footer from "./components/footer";
 import Landing from "./components/landing";
 import Navbar from "./components/navbar";
-import RoadMa from "./components/roadmap";
+import RoadMapCarosual from "./components/roadmap";
 import RoadMap from "./components/roadmap/RoadMap";
 import Team from "./components/team/Team";
 import Utility from "./components/utility/Utility";
@@ -15,7 +16,7 @@ function App() {
         <Navbar />
         <Landing />
         <About />
-        <RoadMap />
+        <RoadMapCarosual />
         <Utility />
         <RoadMap />
         <Team />

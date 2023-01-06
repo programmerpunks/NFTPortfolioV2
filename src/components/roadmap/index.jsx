@@ -40,7 +40,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-const RoadMap = () => {
+const RoadMapCarosual = () => {
   var settings = {
     infinite: false,
     speed: 500,
@@ -100,4 +100,4 @@ const RoadMap = () => {
   );
 };
 
-export default RoadMap;
+export default RoadMapCarosual;
