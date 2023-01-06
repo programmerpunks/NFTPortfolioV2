@@ -1,7 +1,11 @@
 import React from "react";
-import { FaDiscord } from "react-icons/fa";
+
+import { BsMedium } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
+import { FaDiscord } from "react-icons/fa";
+
 const logo = require("../../images/navbar/moonRobotsLogo.png");
+
 const Navbar = () => {
   return (
     <>
@@ -24,10 +28,14 @@ const Navbar = () => {
         <div className="flex w-full justify-center p-1 pr-4">
           <div className="flex flex-col justify-center">
             <div className="flex justify-between">
-              <button className="flex hover:scale-125 duration-300 rounded-2xl px-3 items-center text-black bg-yellow-400">
+              <button className="flex hover:scale-125 duration-300 rounded-2xl px-3 items-center text-black bg-[#DBFF00]">
                 Buy One
               </button>
               <div className="flex justify-around px-4">
+                <BsMedium
+                  size={20}
+                  className="m-1 hover:scale-150 duration-300 cursor-pointer"
+                />
                 <FaDiscord
                   size={20}
                   className="m-1 hover:scale-150 duration-300 cursor-pointer"
