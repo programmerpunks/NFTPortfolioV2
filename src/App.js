@@ -1,11 +1,15 @@
 import React from "react";
+import RoadMap from "./components/roadmap/RoadMap";
+import Team from "./components/team/Team";
+import Utility from "./components/utility/Utility";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-    NFT Portfolio Version 2
-  </h1>
-
+    <div className="bg-[#0C0324]">
+      <Utility />
+      <RoadMap />
+      <Team />
+    </div>
   );
 }
 
