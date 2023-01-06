@@ -3,7 +3,10 @@ import About from "./components/about";
 import Footer from "./components/footer";
 import Landing from "./components/landing";
 import Navbar from "./components/navbar";
-import RoadMap from "./components/roadmap";
+import RoadMa from "./components/roadmap";
+import RoadMap from "./components/roadmap/RoadMap";
+import Team from "./components/team/Team";
+import Utility from "./components/utility/Utility";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
         <Landing />
         <About />
         <RoadMap />
+        <Utility />
+        <RoadMap />
+        <Team />
         <Footer />
       </div>
     </>
