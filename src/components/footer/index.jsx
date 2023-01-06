@@ -4,7 +4,8 @@ import { BsMedium } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 
-const footer = require("../../images/footer/footer.png")
+const footer = require("../../images/footer/footer.png");
+
 const Footer = () => {
   return (
     <>
@@ -33,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center w-full md:w-[30%]">
-            <img src={footer} alt="/" />
+          <img src={footer} alt="/" />
         </div>
         <div className="flex justify-center flex-col px-10">
           <div className="flex text-center w-full justify-center font-bold py-2 pb-4 text-4xl text-white">

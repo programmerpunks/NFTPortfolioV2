@@ -4,7 +4,10 @@ const rock = require("../../images/roadmap/roadmapRock.png");
 const RoadMapItemCart = ({ numbered, phase, points, title }) => {
   return (
     <>
-      <div className="flex justify-center flex-col px-2 py-4">
+      <div
+        className="flex justify-center flex-col px-2 py-4"
+        data-aos="fade-up"
+      >
         <div className="flex justify-between px-5">
           <span className="flex justify-center items-center bg-[#DBFF00] border-[1px] text-black border-red-500 px-6 text-[50px] rounded-[35%]">
             {phase}

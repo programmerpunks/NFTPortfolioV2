@@ -3,7 +3,10 @@ import { FaTwitter } from "react-icons/fa";
 
 const TeamCard = ({ name, about, img, twitter_link }) => {
   return (
-    <div className="bg-[#1D1533] rounded-md text-gray-600 p-5">
+    <div
+      className="bg-[#1D1533] rounded-md text-gray-600 p-5"
+      data-aos="fade-up"
+    >
       <div className="rounded-md">
         <img className="rounded-md w-full" src={img} alt="" />
       </div>
