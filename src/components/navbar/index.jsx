@@ -1,12 +1,18 @@
 import React from "react";
-
 import { BsMedium } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 
 const logo = require("../../images/navbar/moonRobotsLogo.png");
 
-const Navbar = () => {
+const Navbar = ({
+  connection,
+  disconnect,
+  getTokens,
+  logout,
+  readContract,
+  wallet,
+}) => {
   return (
     <>
       <div className="flex bg-transparent text-white pt-5 mb-[5%]">
@@ -46,8 +52,23 @@ const Navbar = () => {
                 />
               </div>
             </div>
-            <button className="flex border-[1px] p-1 hover:scale-125 duration-700 rounded-2xl px-2 justify-center mt-5 text-white bg-transparent cursor-pointer">
-              Connect Metamask
+            <button
+              onClick={async () => {
+                logout
+                  ? (async function () {
+                      await disconnect();
+                    })()
+                  : (async function () {
+                      await connection();
+                      await readContract();
+                      await getTokens();
+                    })();
+              }}
+              className={`flex border-[1px] p-1 hover:scale-125 duration-700 rounded-2xl px-2 justify-center mt-5 text-white bg-transparent cursor-pointer ${
+                logout ? "hover:before:content-['Disconnect:']" : ""
+              }`}
+            >
+              {wallet}
             </button>
           </div>
         </div>
