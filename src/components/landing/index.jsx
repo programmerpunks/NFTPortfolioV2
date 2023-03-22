@@ -1,11 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+
+const model = require("../../images/hero/landingModel.png");
+const model2 = require("../../images/hero/LandingModel2.png");
 const partner1 = require("../../images/hero/partner1.png");
 const partner2 = require("../../images/hero/partner2.png");
 const partner3 = require("../../images/hero/partner3.png");
 const partner4 = require("../../images/hero/partner4.png");
-const model = require("../../images/hero/landingModel.png");
-const model2 = require("../../images/hero/LandingModel2.png");
 
 const Landing = () => {
   const navigate = useNavigate();

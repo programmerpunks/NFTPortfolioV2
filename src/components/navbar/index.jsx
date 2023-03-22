@@ -1,5 +1,4 @@
 import React from "react";
-
 import { BsMedium } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
@@ -7,16 +6,12 @@ import { FaDiscord } from "react-icons/fa";
 const logo = require("../../images/navbar/moonRobotsLogo.png");
 
 const Navbar = ({
-  wallet,
-  logout,
-  disconnect,
-  setUserMintedAmount,
-  setMaxMintAmount,
-  setPrice,
-  setImages,
   connection,
-  readContract,
+  disconnect,
   getTokens,
+  logout,
+  readContract,
+  wallet,
 }) => {
   return (
     <>
@@ -62,10 +57,6 @@ const Navbar = ({
                 logout
                   ? (async function () {
                       await disconnect();
-                      await setUserMintedAmount(0);
-                      await setMaxMintAmount("-");
-                      await setPrice("-");
-                      await setImages([]);
                     })()
                   : (async function () {
                       await connection();
