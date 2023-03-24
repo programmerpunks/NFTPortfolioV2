@@ -17,12 +17,12 @@ const Landing = () => {
           <div className="flex flex-col pt-[10%] justify-center ">
             <div className="flex text-6xl md:text-8xl text-center">
               To The Moon!
-            </div>
+            </div>    
             <div className="flex justify-center flex-col">
               <div className="flex justify-center">
-                Public Sale sold out in 1 hour 58 minutes
+                Public Sale sold out in 1 hour 58 minutes 
               </div>
-              <div className="flex justify-center ">
+              <div className="flex justify-center "> 
                 <div className="flex hover:scale-110 flex-wrap cursor-pointer duration-500 border-dotted justify-center border-b">
                   Read more on Medium
                 </div>

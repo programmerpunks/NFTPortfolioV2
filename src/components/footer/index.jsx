@@ -1,7 +1,6 @@
 import React from "react";
 
-import { BsMedium } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
+import { BsMedium, BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 
 const footer = require("../../images/footer/footer.png");

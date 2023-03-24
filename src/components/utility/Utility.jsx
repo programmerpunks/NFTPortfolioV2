@@ -1,6 +1,7 @@
 import React from "react";
-import { utility } from "./utility";
+
 import Card from "./Card";
+import { utility } from "./utility";
 
 const Utility = () => {
   return (

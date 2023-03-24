@@ -1,6 +1,6 @@
 import React from "react";
-import AboutItemCart from "./aboutItemCart";
 
+import AboutItemCart from "./aboutItemCart";
 const item1 = require("../../images/about/aboutItem.png");
 const item2 = require("../../images/about/aboutItem2.png");
 const item3 = require("../../images/about/aboutItem3.png");

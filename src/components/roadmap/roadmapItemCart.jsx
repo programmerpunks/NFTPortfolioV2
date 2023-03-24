@@ -1,6 +1,7 @@
 import React from "react";
 
 const rock = require("../../images/roadmap/roadmapRock.png");
+
 const RoadMapItemCart = ({ numbered, phase, points, title }) => {
   return (
     <>

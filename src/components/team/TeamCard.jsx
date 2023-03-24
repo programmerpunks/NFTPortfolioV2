@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FaTwitter } from "react-icons/fa";
 
 const TeamCard = ({ name, about, img, twitter_link }) => {
