@@ -23,7 +23,7 @@ Once done, then
 - Clone the respected git repository
 
 ```sh
-$ git clone https://github.com/programmerpunks/RFTK.git
+$ git clone https://github.com/programmerpunks/NFTPortfolioV2.git
 ```
 
 - Install all dependencies
