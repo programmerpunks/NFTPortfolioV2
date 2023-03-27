@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutItemCart = ({ img, title }) => {
+const AboutItemCart = ({ details, img, title }) => {
   return (
     <>
       <div
@@ -16,8 +16,7 @@ const AboutItemCart = ({ img, title }) => {
               {title}
             </div>
             <p className="flex flex-wrap justify-center text-white font-light text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus corrupti harum non consequatur optio.
+              {details}
             </p>
           </div>
         </div>

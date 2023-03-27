@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { toast } from "react-toastify";
 
-import { ContractABI } from "./Contract";
+import { ContractABI } from "../../content/Mint/Contract";
 
 import "react-toastify/dist/ReactToastify.css";
 

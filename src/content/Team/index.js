@@ -1,4 +1,5 @@
 import team_member from "../../images/team/team_member.jpg";
+
 export const TeamMember = [
   {
     name: "Lorem Ipsum",

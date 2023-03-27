@@ -5,7 +5,7 @@ import { ethers } from "ethers";
 import { toast, ToastContainer } from "react-toastify";
 
 import About from "./components/about";
-import { ContractABI } from "../src/components/Mint/Contract";
+import { ContractABI } from "./content/Mint/Contract";
 import Footer from "./components/footer";
 import Landing from "./components/landing";
 import Mint from "./components/Mint/Mint.jsx";

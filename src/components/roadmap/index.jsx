@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-import roadmapDetails from "./RoadMapData";
+import roadmapDetails from "../../content/RoadMap";
 import RoadMapItemCart from "./roadmapItemCart";
 
 function SampleNextArrow(props) {
