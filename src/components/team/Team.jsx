@@ -5,7 +5,7 @@ import { TeamMember } from "../../content/Team";
 
 const Team = () => {
   return (
-    <div className="mx-[10%]">
+    <div className="mx-[10%]" id='TEAM'>
       <div className="font-bold text-white text-3xl text-center py-10">
         MEET OUR TEAM
       </div>

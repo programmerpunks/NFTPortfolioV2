@@ -20,9 +20,6 @@ export const footerMenu = [
     title: "TEAM",
   },
   {
-    title: "WILDCAT LIST",
-  },
-  {
     title: "CONTACT",
   }
 ];

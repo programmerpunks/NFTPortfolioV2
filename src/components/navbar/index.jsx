@@ -25,11 +25,13 @@ const Navbar = ({
           </div>
         </div>
         <div className="flex md:w-[30%] justify-center p-4">
-          <img
-            src={logo}
-            alt="/"
-            className="hover:scale-125 duration-300 cursor-pointer"
-          />
+          <a href="/">
+            <img
+              src={logo}
+              alt="/"
+              className="hover:scale-125 duration-300 cursor-pointer"
+            />
+          </a>
         </div>
         <div className="flex w-full justify-center p-1 pr-4">
           <div className="flex flex-col justify-center">

@@ -76,7 +76,7 @@ const RoadMapCarosual = () => {
   };
   return (
     <>
-      <div className="flex flex-col justify-center text-white">
+      <div className="flex flex-col justify-center text-white" id='ROAD MAP'>
         <div className="flex text-6xl justify-center p-4">Roadmap</div>
         <div className="">
           <div className="px-[10%]">

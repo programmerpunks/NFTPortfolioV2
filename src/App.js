@@ -32,7 +32,7 @@ function App() {
   const connection = async () => {
     const res = await setupConnections();
     if (res === false) {
-      setWallet("Connect a Wallet");
+      setWallet("Connnect a Wallet");
       await window.ethereum.request({
         method: "wallet_switchEthereumChain",
         params: [{ chainId: REACT_APP_NETWORK_CHAIN_ID }],
@@ -121,6 +121,7 @@ function App() {
 
   useEffect(() => {
     Aos.init({ duration: 3000 });
+    connection();
   }, []);
   return (
     <>

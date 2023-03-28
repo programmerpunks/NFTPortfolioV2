@@ -82,7 +82,7 @@ function Mint({
   }, []);
 
   return (
-    <>
+    <div className="flex flex-col items-center justify-center h-screen">
       <div className="text-white text-2xl text-center font-bold bg-blue-light pb-5 bg-opacity-80">
         <div>
           Total minted: {userMintedAmount}/{maxMintAmount}
@@ -92,7 +92,7 @@ function Mint({
           <div className="outline grid md:grid-cols-2 grid-cols-1 px-20 py-5">
             <div className="flex">
               <button
-                className="btn2 md:w-12 w-9  py-2 relative border text-white border-white uppercase font-semibold "
+                className="btn2 md:w-12 w-9 py-2 relative border text-white border-white uppercase font-semibold "
                 type="button"
                 onClick={() => {
                   setAmount(amount - 1);
@@ -112,7 +112,7 @@ function Mint({
               </button>
             </div>
             <button
-              className="btn2  md:py-0 py-3 relative  text-white  uppercase font-semibold "
+              className="btn2  md:py-0 py-3 relative  text-white uppercase font-semibold "
               type="button"
               onClick={async () => {
                 await mint(amount);
@@ -140,7 +140,7 @@ function Mint({
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 
