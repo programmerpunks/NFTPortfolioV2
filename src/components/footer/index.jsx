@@ -6,7 +6,7 @@ import { links } from "../../content/SocialLinks";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row " id='CONTACT'>
+      <div className="flex flex-col md:flex-row " id="CONTACT">
         <div className="flex flex-wrap flex-col py-[10%] w-full md:w-[40%]">
           <div className="flex  justify-center md:justify-start px-5 font-bold text-2xl text-white">
             {footerData.contact}
@@ -18,7 +18,9 @@ const Footer = () => {
                   <div className="flex justify-center items-center text-white">
                     {lnk.icon}
                   </div>
-                  <div className="flex text-white px-1">{lnk.title}</div>
+                  <a href={lnk.link} rel="noreferrer" target="_blank" className="flex text-white px-1">
+                    {lnk.title}
+                  </a>
                 </div>
               );
             })}
@@ -35,9 +37,7 @@ const Footer = () => {
             {footerMenu.map((menu) => {
               return (
                 <li className="text-white cursor-pointer py-1 hover:text-[#DBFF00]">
-                  <a href={`#${menu.title}`}>
-                  {menu.title}
-                  </a>
+                  <a href={`#${menu.title}`}>{menu.title}</a>
                 </li>
               );
             })}

@@ -1,8 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import { BsMedium, BsTwitter } from "react-icons/bs";
-import { FaDiscord } from "react-icons/fa";
+import { links } from "../../content/SocialLinks";
 
 const logo = require("../../images/navbar/moonRobotsLogo.png");
 
@@ -56,18 +55,18 @@ const Navbar = ({
                 Buy One
               </button>
               <div className="flex justify-around px-4">
-                <BsMedium
-                  size={20}
-                  className="m-1 hover:scale-150 duration-300 cursor-pointer"
-                />
-                <FaDiscord
-                  size={20}
-                  className="m-1 hover:scale-150 duration-300 cursor-pointer"
-                />
-                <BsTwitter
-                  size={20}
-                  className="m-1 hover:scale-150 duration-300 cursor-pointer"
-                />
+                {links.map((lnk) => {
+                  return (
+                    <a
+                      href={lnk.link}
+                      rel="noreferrer"
+                      target="_blank"
+                      className="m-1 hover:scale-150 duration-300 cursor-pointer"
+                    >
+                      {lnk.icon}
+                    </a>
+                  );
+                })}
               </div>
             </div>
             <button
