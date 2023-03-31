@@ -4,7 +4,7 @@ const AboutItemCart = ({ details, img, title }) => {
   return (
     <>
       <div
-        className="flex pt-[30%] px-20 md:p-1 md:pt-2 lg:p-0 w-full md:w-1/2 lg:w-1/4"
+        className="flex pt-[30%] px-5 md:px-20 md:p-1 md:pt-2 lg:p-0 w-full md:w-1/2 lg:w-1/4"
         data-aos="fade-up"
       >
         <div className="flex items-center px-[20%] md:m-10 lg:m-0  bg-[#4e2b83] lg:bg-transparent rounded-xl transform -translate-y-1/4">

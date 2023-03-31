@@ -5,17 +5,17 @@ import roadmapDetails from "../../content/RoadMap";
 import RoadMapItemCart from "./roadmapItemCart";
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, style, onClick, hideOnMobile } = props;
   return (
     <>
       <button
         className={className}
         style={{
           ...style,
-          display: "flex",
           justifyContent: "center",
           marginRight: "-25px",
           scale: "3",
+          display: hideOnMobile ? "none" : "block",
         }}
         onClick={onClick}
       ></button>
@@ -24,13 +24,13 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, style, onClick, hideOnMobile } = props;
   return (
     <div
       className={className}
       style={{
         ...style,
-        display: "flex",
+        display: hideOnMobile ? "none" : "block",
         justifyContent: "center",
         marginLeft: "-25px",
         scale: "3",
@@ -41,13 +41,15 @@ function SamplePrevArrow(props) {
 }
 
 const RoadMapCarosual = () => {
+  const isMobile = window.matchMedia("(max-width: 480px)").matches;
+  
   var settings = {
     infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow hideOnMobile={isMobile} />,
+    prevArrow: <SamplePrevArrow hideOnMobile={isMobile} />,
     initialSlide: 0,
     responsive: [
       {
@@ -78,7 +80,6 @@ const RoadMapCarosual = () => {
     <>
       <div className="flex flex-col justify-center text-white" id='ROAD MAP'>
         <div className="flex text-6xl justify-center p-4">Roadmap</div>
-        <div className="">
           <div className="px-[10%]">
             <Slider {...settings}>
               {roadmapDetails.map((roadmap) => {
@@ -93,7 +94,6 @@ const RoadMapCarosual = () => {
                 );
               })}
             </Slider>
-          </div>
         </div>
       </div>
     </>

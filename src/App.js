@@ -126,6 +126,7 @@ function App() {
   return (
     <>
       <div className="bg-star-img bg-cover px-[1%] md:px-[10%] lg:px-[20%] w-full">
+        <BrowserRouter>
         <Navbar
           connection={connection}
           disconnect={disconnect}
@@ -134,7 +135,6 @@ function App() {
           readContract={readContract}
           wallet={wallet}
         />
-        <BrowserRouter>
           <Routes>
             <Route
               exact

@@ -7,7 +7,7 @@ const Landing = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="flex w-full bg-moon-img bg-no-repeat bg-center bg-contain  justify-center text-white">
+      <div className="flex h-screen md:h-max w-full bg-moon-img bg-no-repeat bg-center bg-contain  justify-center text-white">
         <div className="hidden md:flex w-[20%] justify-center animate-[wiggle_1s_ease-in-out_infinite]">
           <img
             src={landingData.firstModel}
