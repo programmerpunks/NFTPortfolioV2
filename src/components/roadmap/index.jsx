@@ -44,14 +44,16 @@ const RoadMapCarosual = () => {
   const isMobile = window.matchMedia("(max-width: 480px)").matches;
   
   var settings = {
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow hideOnMobile={isMobile} />,
     prevArrow: <SamplePrevArrow hideOnMobile={isMobile} />,
     initialSlide: 0,
-    responsive: [
+    autoplay: true, 
+    autoplaySpeed: 1500,
+    responsive: [ 
       {
         breakpoint: 1024,
         settings: {

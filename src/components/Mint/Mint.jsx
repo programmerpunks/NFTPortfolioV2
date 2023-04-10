@@ -17,7 +17,7 @@ function Mint({
   userMintedAmount,
   wallet,
 }) {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
   const [check, setCheck] = useState(false);
 
   const { REACT_APP_CONTRACT_ADDRESS } = process.env;
@@ -95,7 +95,7 @@ function Mint({
                 className="btn2 md:w-12 w-9 py-2 relative border text-white border-white uppercase font-semibold "
                 type="button"
                 onClick={() => {
-                  setAmount(amount - 1);
+                  setAmount(amount <= 1 ? amount : amount - 1);
                 }}
               >
                 -
